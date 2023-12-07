@@ -1,0 +1,37 @@
+---
+title: "FlagWeather Graphs"
+author: "Angelica Alcala"
+date: "2023-12-05"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggplot2)
+library(AlcalaChapter16)
+```
+
+
+```{r}
+ggplot(FlagWeather, aes(x=DATE, y=PRCP)) +
+  geom_line()
+```
+
+
+```{r}
+ggplot(FlagWeather, aes(x=DATE, y=TMAX)) +
+  geom_line()
+```
+
+
+```{r}
+ggplot(FlagWeather, aes(x=DATE, y=SNOW)) +
+  geom_point()
+```
+
+```{r}
+ggplot(FlagWeather, aes(x=TMAX, y=TMIN)) +
+  geom_line()
+```
+

@@ -1,0 +1,15 @@
+---
+title: "FlagWeather Graphs"
+author: "Angelica Alcala"
+date: "2023-12-05"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggplot2)
+```
+
+
+
